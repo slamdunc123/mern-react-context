@@ -22,3 +22,6 @@ Notes - changes from original:
 1) Installed bcryptjs
 2) Changed references from becrypt to bcryptjs
 3) Fixed typo throughout from comtext to context
+
+Todo
+1) Add production steps to enable heroku hosting
