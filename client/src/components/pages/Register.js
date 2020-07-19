@@ -74,7 +74,7 @@ const Register = (props) => {
 					onChange={onchange}
 					required
 				/>
-				<input type='submit' value='Sing Up' className='btn' />
+				<input type='submit' value='Sign Up' className='btn' />
 			</form>
 			<div className='question'>
 				{error !== null &&

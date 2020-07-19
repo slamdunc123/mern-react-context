@@ -28,6 +28,8 @@ Notes - changes from original:
 3. Fixed typo throughout from comtext to context
 4. Rename css class to className
 5. Add default react images to public folder to avoid errors
+6. Change auth route to login
+7. Fix sign up button typo
 
 Todo
 
