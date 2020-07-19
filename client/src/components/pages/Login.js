@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 import AuthContext from '../../context/authContext/authContext';
 
 const Login = (props) => {
-	const { login, isAuthencated, error, clearErrors } = useContext(
+	const { login, isAuthenticated, error, clearErrors } = useContext(
 		AuthContext
 	);
 	useEffect(() => {
-		if (isAuthencated) {
+		if (isAuthenticated) {
 			props.history.push('/');
 			clearErrors();
 		} else {
 			clearErrors();
 		}
 		// eslint-disable-next-line
-	}, [isAuthencated, props.history]);
+	}, [isAuthenticated, props.history]);
 	const [user, setUser] = useState({
 		email: '',
 		password: '',

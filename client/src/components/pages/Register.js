@@ -5,16 +5,16 @@ import AuthContext from '../../context/authContext/authContext';
 const Register = (props) => {
 	const {
 		register,
-		isAuthencated,
+		isAuthenticated,
 		error,
 		clearErrors,
 		setError,
 	} = useContext(AuthContext);
 	useEffect(() => {
-		if (isAuthencated) {
+		if (isAuthenticated) {
 			props.history.push('/');
 		}
-	}, [isAuthencated, props.history]);
+	}, [isAuthenticated, props.history]);
 
 	const [user, setUser] = useState({
 		name: '',

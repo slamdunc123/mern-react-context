@@ -5,7 +5,7 @@ import AuthContext from '../../context/authContext/authContext';
 import GuestContext from '../../context/guestContext/guestContext';
 
 const Navbar = ({ title, icon }) => {
-	const { user, logout, isAuthencated, clearErrors } = useContext(
+	const { user, logout, isAuthenticated, clearErrors } = useContext(
 		AuthContext
 	);
 	const { clearGuests } = useContext(GuestContext);
@@ -50,7 +50,7 @@ const Navbar = ({ title, icon }) => {
 					Made with <span>❤</span> by Mu Idrees
 				</p>
 			</div>
-			<ul>{isAuthencated ? authLinks : guestLinks}</ul>
+			<ul>{isAuthenticated ? authLinks : guestLinks}</ul>
 		</div>
 	);
 };
