@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken');
 //user Model
 const User = require('../models/User');
 
-// @route POST /auth
+// @route POST /login
 // @des Login user
 // @access Public
 
@@ -61,7 +61,7 @@ router.post(
 	}
 );
 
-// @route Get /auth
+// @route Get /login
 // @des Get user
 // @access Private
 
