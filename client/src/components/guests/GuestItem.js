@@ -16,8 +16,8 @@ const GuestItem = ({ guest }) => {
 	};
 
 	return (
-		<div class='guest-card'>
-			<div class='card-head'>
+		<div className='guest-card'>
+			<div className='card-head'>
 				<div>
 					<label className={`${isconfirmed && 'confirm'}`}>
 						Confirmed
@@ -33,19 +33,19 @@ const GuestItem = ({ guest }) => {
 				<div>
 					<button title='Edit Guest'>
 						<i
-							class='fas fa-user-edit'
+							className='fas fa-user-edit'
 							onClick={() => edit_Guest(guest)}
 						></i>
 					</button>
 					<button onClick={handleRemove} title='Remove Guest'>
-						<i class='fas fa-trash-alt remove'></i>
+						<i className='fas fa-trash-alt remove'></i>
 					</button>
 				</div>
 			</div>
-			<div class='card-body'>
+			<div className='card-body'>
 				<h2>{name}</h2>
 				<span
-					class={
+					className={
 						'badge ' +
 						(diet === 'Vegan'
 							? 'green'
@@ -56,8 +56,8 @@ const GuestItem = ({ guest }) => {
 				>
 					{diet}
 				</span>
-				<div class='contact'>
-					<i class='fas fa-phone-alt'></i>
+				<div className='contact'>
+					<i className='fas fa-phone-alt'></i>
 					<p>{phone}</p>
 				</div>
 			</div>

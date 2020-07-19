@@ -65,7 +65,7 @@ const GuestForm = () => {
 				/>
 				<p className='options-label'>Dietary</p>
 				<div className='options'>
-					<label class='container'>
+					<label className='container'>
 						Non-Veg
 						<input
 							type='radio'
@@ -74,9 +74,9 @@ const GuestForm = () => {
 							onChange={onchange}
 							checked={diet === 'Non-Veg'}
 						/>
-						<span class='checkmark'></span>
+						<span className='checkmark'></span>
 					</label>
-					<label class='container'>
+					<label className='container'>
 						Vegan
 						<input
 							type='radio'
@@ -85,9 +85,9 @@ const GuestForm = () => {
 							onChange={onchange}
 							checked={diet === 'Vegan'}
 						/>
-						<span class='checkmark'></span>
+						<span className='checkmark'></span>
 					</label>
-					<label class='container'>
+					<label className='container'>
 						Pescatarian
 						<input
 							type='radio'
@@ -96,7 +96,7 @@ const GuestForm = () => {
 							onChange={onchange}
 							checked={diet === 'Pescatarian'}
 						/>
-						<span class='checkmark'></span>
+						<span className='checkmark'></span>
 					</label>
 				</div>
 				<input
